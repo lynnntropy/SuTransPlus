@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Generated with http://android-holo-colors.com -->
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+  <style name="SutransPlusTheme" parent="@style/_SutransPlusTheme"/>
+
+  <style name="_SutransPlusTheme" parent="android:Theme.Holo.Light">
+
+    <item name="android:editTextBackground">@drawable/sutransplustheme_edit_text_holo_light</item>
+
+    <item name="android:textColorHighlight">#99ff4444</item>
+    <item name="android:textSelectHandleLeft">@drawable/sutransplustheme_text_select_handle_left</item>
+    <item name="android:textSelectHandleRight">@drawable/sutransplustheme_text_select_handle_right</item>
+    <item name="android:textSelectHandle">@drawable/sutransplustheme_text_select_handle_middle</item>
+
+    <item name="android:autoCompleteTextViewStyle">@style/AutoCompleteTextViewSutransPlusTheme</item>
+
+    <item name="android:listChoiceIndicatorMultiple">@drawable/sutransplustheme_btn_check_holo_light</item>
+
+    <item name="android:listChoiceIndicatorSingle">@drawable/sutransplustheme_btn_radio_holo_light</item>
+
+    <item name="android:buttonStyle">@style/ButtonSutransPlusTheme</item>
+
+    <item name="android:imageButtonStyle">@style/ImageButtonSutransPlusTheme</item>
+
+    <item name="android:dropDownSpinnerStyle">@style/SpinnerSutransPlusTheme</item>
+
+    <item name="android:progressBarStyleHorizontal">@style/ProgressBarSutransPlusTheme</item>
+
+    <item name="android:seekBarStyle">@style/SeekBarSutransPlusTheme</item>
+
+    <item name="android:buttonStyleToggle">@style/ToggleSutransPlusTheme</item>
+
+    <item name="android:listChoiceBackgroundIndicator">@drawable/sutransplustheme_list_selector_holo_light</item>
+
+    <item name="android:activatedBackgroundIndicator">@drawable/sutransplustheme_activated_background_holo_light</item>
+
+    <item name="android:fastScrollThumbDrawable">@drawable/sutransplustheme_fastscroll_thumb_holo</item>
+
+  </style>
+
+</resources>

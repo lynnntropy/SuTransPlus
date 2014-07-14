@@ -1,0 +1,125 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:fbutton="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="0dp"
+    tools:context=".HomeActivity"
+
+    android:id="@+id/homeActivityLayout"
+    style="@style/_SutransPlusTheme"
+    android:theme="@style/AppTheme">
+
+    <TextView
+        android:text="SuTrans Plus"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:textSize="55sp"
+        android:id="@+id/appName"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"/>
+
+    <view
+        class="info.hoang8f.widget.FButton"
+
+        fbutton:buttonColor="#f44"
+        android:textColor="#ffffff"
+        fbutton:shadowEnabled="true"
+        fbutton:shadowHeight="3dp"
+        fbutton:cornerRadius="3dp"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ažuriraj red vožnje"
+        android:id="@+id/syncButton"
+        android:layout_below="@+id/appName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:width="195sp"
+
+        android:onClick="Synchronize"
+        android:theme="@style/_SutransPlusTheme" />
+
+    <ListView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/homeListView"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/syncButton"
+        android:layout_marginTop="30dp"
+        android:alpha="0"
+
+        android:divider="@null"
+        android:requiresFadingEdge="vertical"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginBottom="0dp"/>
+
+    <fr.castorflex.android.smoothprogressbar.SmoothProgressBar
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+
+        android:id="@+id/downloadBar"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:indeterminate="true"
+        app:spb_sections_count="4"
+        app:spb_color="#FF0000"
+        app:spb_speed="2.0"
+        app:spb_stroke_width="4dp"
+        app:spb_stroke_separator_length="4dp"
+        app:spb_reversed="false"
+        app:spb_mirror_mode="false"
+        app:spb_progressiveStart_activated="true"
+        app:spb_progressiveStart_speed="1.5"
+        app:spb_progressiveStop_speed="3.4"
+        android:layout_below="@+id/syncButton"
+        android:layout_alignLeft="@+id/syncButton"
+        android:layout_alignStart="@+id/syncButton"
+        android:layout_alignRight="@+id/syncButton"
+        android:layout_alignEnd="@+id/syncButton" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Preuzima se: Linija 1/1A"
+        android:id="@+id/downloadText"
+        android:layout_alignTop="@+id/homeListView"
+        android:layout_centerHorizontal="true"
+        android:width="250sp"
+        android:gravity="center_horizontal"
+        android:textSize="20sp" />
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#FF0000"
+        android:layout_above="@+id/syncButton"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="10sp"
+        android:layout_marginRight="10sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dobrodošli! Pošto pokrećete aplikaciju po prvi put, stisnite dugme 'ažuriraj' da biste preuzeli red vožnje. \n\n Ovo morate uraditi samo sada, i u budućnosti kad budete želeli da preuzmete novi red vožnje."
+        android:id="@+id/welcomeText"
+        android:gravity="center_horizontal"
+        android:textSize="17sp"
+        android:layout_below="@+id/downloadText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"/>
+
+</RelativeLayout>
