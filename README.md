@@ -3,6 +3,6 @@ SuTransPlus
 
 An unofficial bus schedule application for SuTrans, a Serbian bus company.
 
-![Screenshot1](http://i.imgur.com/nulk4o8m.jpg)
-![Screenshot2](http://i.imgur.com/HquPN3Zm.jpg)
-![Screenshot3](http://i.imgur.com/coFPJ9Om.jpg)
+![Screenshot1](http://i.imgur.com/Xvbxbd4l.png)
+![Screenshot2](http://i.imgur.com/b6OJdGnl.png)
+![Screenshot3](http://i.imgur.com/QEp7WvJl.png)
